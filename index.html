@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afrin Fathima — Design Technologist</title>
+<meta name="description" content="Afrin Fathima — Design Technologist &amp; Frontend Engineer. Figma-to-code, GSAP motion, performance-tuned React builds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="rail" aria-label="Section timeline">
+  <div class="rail-track">
+    <div class="rail-playhead" id="railPlayhead" aria-hidden="true"></div>
+    <button class="rail-tick" data-target="#hero"><span class="rail-code">00:00</span><span class="rail-label">Intro</span></button>
+    <button class="rail-tick" data-target="#stack"><span class="rail-code">00:12</span><span class="rail-label">Stack</span></button>
+    <button class="rail-tick" data-target="#work"><span class="rail-code">00:28</span><span class="rail-label">Work</span></button>
+    <button class="rail-tick" data-target="#experience"><span class="rail-code">00:52</span><span class="rail-label">Experience</span></button>
+    <button class="rail-tick" data-target="#metrics"><span class="rail-code">01:10</span><span class="rail-label">Metrics</span></button>
+    <button class="rail-tick" data-target="#contact"><span class="rail-code">01:24</span><span class="rail-label">Contact</span></button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow mono">SHOWREEL / AFRIN FATHIMA / CHENNAI, IN</p>
+      <h1 class="hero-title">
+        <span class="line" data-reveal>Design Technologist.</span>
+        <span class="line" data-reveal>I ship the frames</span>
+        <span class="line" data-reveal>between Figma <em>and</em> production.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        3+ years building interactive, production-grade web experiences —
+        pixel-perfect React &amp; HTML/CSS builds, scroll-driven motion in GSAP
+        and Framer Motion, tuned until Lighthouse clears 90 and the metrics move.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a class="btn btn-primary" href="mailto:afrinfathima0301@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="#work">See the reels ↓</a>
+      </div>
+    </div>
+
+    <div class="scrubber" aria-hidden="true">
+      <div class="scrubber-bar">
+        <div class="scrubber-fill" id="scrubberFill"></div>
+        <div class="scrubber-head" id="scrubberHead"></div>
+      </div>
+      <div class="scrubber-labels mono">
+        <span>REC</span><span id="scrubberTime">00:00:00</span><span>90.0 LH</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="stack">
+    <div class="section-head">
+      <p class="eyebrow mono">00:12 — COMPONENT LIBRARY</p>
+      <h2>Every project pulls from the same tokens.</h2>
+    </div>
+
+    <div class="token-grid">
+      <div class="token-card" data-reveal>
+        <p class="token-kicker mono">BUILD</p>
+        <ul>
+          <li>React.js</li><li>HTML5 / CSS3</li><li>JavaScript (ES6+)</li>
+          <li>SASS</li><li>Node.js</li>
+        </ul>
+      </div>
+      <div class="token-card token-card--accent" data-reveal>
+        <p class="token-kicker mono">MOTION</p>
+        <ul>
+          <li>GSAP + ScrollTrigger</li><li>Framer Motion</li><li>Lottie</li>
+          <li>Parallax / scroll-reveal</li><li>Micro-interactions</li>
+        </ul>
+      </div>
+      <div class="token-card" data-reveal>
+        <p class="token-kicker mono">DESIGN → CODE</p>
+        <ul>
+          <li>Figma token extraction</li><li>Type systems</li>
+          <li>Component libraries</li><li>Mobile-first breakpoints</li>
+        </ul>
+      </div>
+      <div class="token-card" data-reveal>
+        <p class="token-kicker mono">TOOLING</p>
+        <ul>
+          <li>Vite / Webpack</li><li>npm / yarn</li><li>Git</li><li>AWS</li>
+        </ul>
+      </div>
+      <div class="token-card" data-reveal>
+        <p class="token-kicker mono">AI-ASSISTED</p>
+        <ul>
+          <li>Amazon Q Developer</li><li>GitHub Copilot</li><li>Cursor</li>
+        </ul>
+      </div>
+      <div class="token-card" data-reveal>
+        <p class="token-kicker mono">PERFORMANCE / QA</p>
+        <ul>
+          <li>Lighthouse tuning</li><li>Lazy loading / code splitting</li>
+          <li>WCAG</li><li>Cross-browser QA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <div class="section-head">
+      <p class="eyebrow mono">00:28 — SELECTED REELS</p>
+      <h2>Three live builds, three different constraints.</h2>
+      <p class="section-note">
+        These are client engagements under active NDA-style agreements, so instead of
+        screenshots, here's the build map I'd hand to a teammate — the same habit of
+        documenting page architecture and component patterns I'd bring to BIL.
+      </p>
+    </div>
+
+    <!-- REEL 01 -->
+    <article class="reel" data-reveal>
+      <div class="reel-media">
+        <svg class="reel-map" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build map of the Enterprise Automotive Commerce Infrastructure homepage layout">
+          <rect x="0" y="0" width="480" height="340" rx="6" class="map-bg"/>
+          <rect x="16" y="16" width="448" height="34" rx="4" class="map-block map-block--dark"/>
+          <rect x="28" y="28" width="70" height="10" rx="2" class="map-line map-line--light"/>
+          <rect x="330" y="26" width="26" height="14" rx="2" class="map-line map-line--accent"/>
+          <rect x="364" y="26" width="26" height="14" rx="2" class="map-line map-line--accent"/>
+          <rect x="398" y="26" width="66" height="14" rx="2" class="map-line map-line--accent"/>
+          <rect x="16" y="64" width="448" height="120" rx="4" class="map-block"/>
+          <rect x="36" y="90" width="200" height="16" rx="2" class="map-line"/>
+          <rect x="36" y="116" width="260" height="10" rx="2" class="map-line map-line--muted"/>
+          <rect x="36" y="150" width="110" height="24" rx="12" class="map-line map-line--accent-fill"/>
+          <rect x="16" y="198" width="140" height="120" rx="4" class="map-block"/>
+          <rect x="164" y="198" width="140" height="120" rx="4" class="map-block"/>
+          <rect x="312" y="198" width="152" height="120" rx="4" class="map-block"/>
+          <rect x="30" y="212" width="112" height="60" rx="3" class="map-line map-line--muted"/>
+          <rect x="178" y="212" width="112" height="60" rx="3" class="map-line map-line--muted"/>
+          <rect x="326" y="212" width="124" height="60" rx="3" class="map-line map-line--muted"/>
+          <text x="30" y="290" class="map-caption">VEHICLE LISTING</text>
+          <text x="178" y="290" class="map-caption">FINANCE APP</text>
+          <text x="326" y="290" class="map-caption">DEALER LOCATOR</text>
+        </svg>
+      </div>
+      <div class="reel-copy">
+        <div class="reel-meta mono">
+          <span class="tag tag--status-live">complete · dms integration pending</span>
+          <span>Aug 2025 – Apr 2026</span>
+        </div>
+        <h3>Reel 01 — Enterprise Automotive client</h3>
+        <p class="reel-role">Frontend &amp; HubSpot CMS Developer · Solo build</p>
+        <p>
+          Owned the full redesign and rebuild of a dealership site — home, vehicle
+          listing, vehicle detail, and finance-application pages — then migrated the
+          entire thing into HubSpot CMS. Pitched the UX changes to the client myself,
+          got sign-off, and shipped them.
+        </p>
+        <ul class="reel-facts">
+          <li>Proposed and shipped a full UI/UX redesign, explained the reasoning to the client, and implemented the approved version</li>
+          <li>Mapped HubSpot properties to every form and wired up finance-application workflows</li>
+          <li>Rewrote the slider implementation and fixed cache issues to bring page speed down</li>
+          <li>Added schema markup on vehicle-detail pages and cleared a large backlog of SEO issues</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- REEL 02 -->
+    <article class="reel reel--reverse" data-reveal>
+      <div class="reel-media">
+        <svg class="reel-map" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build map of the homepage layout">
+          <rect x="0" y="0" width="480" height="340" rx="6" class="map-bg"/>
+          <rect x="16" y="16" width="448" height="30" rx="4" class="map-block map-block--dark"/>
+          <rect x="28" y="26" width="60" height="10" rx="2" class="map-line map-line--light"/>
+          <rect x="120" y="26" width="40" height="10" rx="2" class="map-line map-line--light"/>
+          <rect x="170" y="26" width="40" height="10" rx="2" class="map-line map-line--light"/>
+          <rect x="220" y="26" width="40" height="10" rx="2" class="map-line map-line--light"/>
+          <rect x="400" y="22" width="64" height="18" rx="9" class="map-line map-line--accent-fill"/>
+          <rect x="16" y="56" width="448" height="70" rx="4" class="map-block"/>
+          <rect x="36" y="78" width="180" height="14" rx="2" class="map-line"/>
+          <rect x="36" y="98" width="240" height="10" rx="2" class="map-line map-line--muted"/>
+          <rect x="16" y="136" width="106" height="90" rx="4" class="map-block"/>
+          <rect x="130" y="136" width="106" height="90" rx="4" class="map-block"/>
+          <rect x="244" y="136" width="106" height="90" rx="4" class="map-block"/>
+          <rect x="358" y="136" width="106" height="90" rx="4" class="map-block"/>
+          <rect x="16" y="236" width="448" height="84" rx="4" class="map-block map-block--accent-outline"/>
+          <text x="30" y="164" class="map-caption">PRODUCT CARD</text>
+          <text x="144" y="164" class="map-caption">PRODUCT CARD</text>
+          <text x="258" y="164" class="map-caption">PRODUCT CARD</text>
+          <text x="372" y="164" class="map-caption">PRODUCT CARD</text>
+          <text x="30" y="262" class="map-caption">HUBDB-DRIVEN CATEGORY RAIL</text>
+        </svg>
+      </div>
+      <div class="reel-copy">
+        <div class="reel-meta mono">
+          <span class="tag tag--status-hold">on hold · awaiting salesforce sync</span>
+          <span>Ongoing</span>
+        </div>
+        <h3>Reel 02 — B2B industrial brand</h3>
+        <p class="reel-role">Frontend &amp; HubSpot CMS Developer · E-commerce</p>
+        <p>
+          A CMS-driven storefront where every product and category has to update
+          itself: Salesforce feeds HubDB, HubDB feeds the templates. My job was
+          making the front end trust that pipeline completely — no hard-coded
+          content anywhere.
+        </p>
+        <ul class="reel-facts">
+          <li>Built home, listing, PDP, brand, and category pages from Figma, pixel-for-pixel</li>
+          <li>Built a dynamic header with category/sub-category navigation and search</li>
+          <li>Created reusable modules — product listings, related products, shop-by-category, sliders</li>
+          <li>Replaced heavy sliders and re-optimised assets to bring load times down</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- REEL 03 -->
+    <article class="reel" data-reveal>
+      <div class="reel-media">
+        <svg class="reel-map" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build map of the BNK Services homepage layout">
+          <rect x="0" y="0" width="480" height="340" rx="6" class="map-bg"/>
+          <rect x="16" y="16" width="448" height="30" rx="4" class="map-block map-block--dark"/>
+          <rect x="28" y="26" width="70" height="10" rx="2" class="map-line map-line--light"/>
+          <rect x="380" y="24" width="84" height="14" rx="7" class="map-line map-line--accent-fill"/>
+          <rect x="16" y="56" width="264" height="140" rx="4" class="map-block"/>
+          <rect x="36" y="80" width="200" height="16" rx="2" class="map-line"/>
+          <rect x="36" y="106" width="220" height="10" rx="2" class="map-line map-line--muted"/>
+          <rect x="36" y="126" width="220" height="10" rx="2" class="map-line map-line--muted"/>
+          <rect x="36" y="160" width="120" height="24" rx="12" class="map-line map-line--accent-fill"/>
+          <rect x="292" y="56" width="172" height="140" rx="4" class="map-block map-block--accent-outline"/>
+          <rect x="308" y="72" width="140" height="14" rx="2" class="map-line"/>
+          <rect x="308" y="96" width="140" height="12" rx="2" class="map-line map-line--muted"/>
+          <rect x="308" y="118" width="140" height="12" rx="2" class="map-line map-line--muted"/>
+          <rect x="308" y="140" width="140" height="12" rx="2" class="map-line map-line--muted"/>
+          <rect x="308" y="162" width="100" height="20" rx="10" class="map-line map-line--accent-fill"/>
+          <rect x="16" y="212" width="448" height="108" rx="4" class="map-block"/>
+          <rect x="36" y="232" width="120" height="10" rx="2" class="map-line map-line--muted"/>
+          <rect x="36" y="250" width="408" height="52" rx="4" class="map-block map-block--dashed"/>
+          <text x="308" y="196" class="map-caption">CRM FORM MODULE</text>
+          <text x="36" y="300" class="map-caption">SEO-READY BLOG TEMPLATE</text>
+        </svg>
+      </div>
+      <div class="reel-copy">
+        <div class="reel-meta mono">
+          <span class="tag tag--status-ready">ready · awaiting domain cut-over</span>
+          <span>Ongoing</span>
+        </div>
+        <h3>Reel 03 — BNK Services</h3>
+        <p class="reel-role">Frontend &amp; HubSpot CMS Developer · End-to-end owner</p>
+        <p>
+          A full-site migration where the brief was "don't break anything the client
+          already trusts." I owned it start to finish — templates, modules, content,
+          QA, and everything short of flipping the domain switch.
+        </p>
+        <ul class="reel-facts">
+          <li>Migrated the entire site to HubSpot CMS: templates, modules, blogs, CRM-connected forms</li>
+          <li>Implemented SEO-ready structure and metadata through the migration</li>
+          <li>Ran full functional and cross-device QA, plus a performance comparison against the old live site</li>
+          <li>Maintained page/module mapping so the handover has zero surprises</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="section-head">
+      <p class="eyebrow mono">00:52 — TIMECODE</p>
+      <h2>Where the reels were shot.</h2>
+    </div>
+    <ol class="timecode-list">
+      <li data-reveal>
+        <span class="tc mono">AUG 2025 → NOW</span>
+        <div>
+          <h3>Design Technologist / HubSpot CMS Developer</h3>
+          <p class="tc-org">ERPApps · Remote</p>
+          <p>End-to-end builds from Figma handoff to live deployment; GSAP and Framer Motion for interaction detail; used interaction data to catch a buried-CTA problem on an automobile client and redesigned the flow around it.</p>
+        </div>
+      </li>
+      <li data-reveal>
+        <span class="tc mono">FEB 2023 → APR 2025</span>
+        <div>
+          <h3>Frontend Developer</h3>
+          <p class="tc-org">BlueOshan · Chennai</p>
+          <p>Pixel-perfect Figma-to-React builds, mobile-first and cross-device. Held Lighthouse above 90 while cutting average page-load latency 30–40% through asset optimisation and code splitting.</p>
+        </div>
+      </li>
+      <li data-reveal>
+        <span class="tc mono">2024</span>
+        <div>
+          <h3>UX Prototyper / R&amp;D Contributor</h3>
+          <p class="tc-org">BlueOshan · Internal project</p>
+          <p>Picked up Flutter and Firebase to prototype mobile UI flows and auth transitions for an early-stage exploratory build, evaluating design-to-code frameworks along the way.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- METRICS -->
+  <section id="metrics" class="metrics">
+    <div class="section-head section-head--center">
+      <p class="eyebrow mono">01:10 — READOUT</p>
+      <h2>What shipping actually looked like.</h2>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-card" data-reveal>
+        <p class="metric-number mono">90<span class="metric-unit">+</span></p>
+        <p class="metric-label">Lighthouse score held across shipped builds</p>
+      </div>
+      <div class="metric-card" data-reveal>
+        <p class="metric-number mono">30–40<span class="metric-unit">%</span></p>
+        <p class="metric-label">Average page-load latency cut through asset &amp; code-split optimisation</p>
+      </div>
+      <div class="metric-card" data-reveal>
+        <p class="metric-number mono">10<span class="metric-unit">+</span></p>
+        <p class="metric-label">Production websites shipped end-to-end</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <p class="eyebrow mono">01:24 — CUT TO BLACK</p>
+      <h2>Let's build the next reel.</h2>
+      <p class="contact-sub">
+        Open to the Design Technologist I role at Brand Innovation Lab — happy to
+        walk through any of the builds above in more depth.
+      </p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:afrinfathima0301@gmail.com">afrinfathima0301@gmail.com</a>
+        <a class="btn btn-ghost" href="tel:+918098616567">+91 80986 16567</a>
+      </div>
+      <p class="contact-location mono">CHENNAI, INDIA</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
